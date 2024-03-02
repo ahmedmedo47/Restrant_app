@@ -2,13 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ContainrMeal extends StatelessWidget {
-  const ContainrMeal(
-      {super.key,
-      required this.imageu,
-      required this.name,
-      required this.num,
-      required this.id});
+  const ContainrMeal({
+    super.key,
+    required this.imageu,
+    required this.name,
+    required this.num,
+    required this.id,
+    this.salary,
+    this.time,
+    this.description,
+    this.categoryNumber,
+  });
   final String imageu;
+  final String? salary;
+  final String? time;
+  final String? description;
+  final String? categoryNumber;
   final String name;
   final int num;
   final String id;
